@@ -1,0 +1,51 @@
+\documentclass{xduugthesis}
+\usepackage{amsmath}
+% \usepackage{xcolor}  % 各种颜色
+\usepackage{array}
+\usepackage{minted}  % 代码高亮
+\usepackage[all]{genealogytree}  % 作图
+\xdusetup{
+    info = {
+    title = {Deeplabv3在MLU270上的移植及\\优化研究},
+    department = {人工智能学院},
+    major = {智能科学与技术},
+    author = {詹XX},
+    supervisor = {李},
+    supervisor-department = {李},
+    supervisor-enterprise = {无},
+    supervisor-school = {李},
+    class-id = {1820011},
+    student-id = {18170100045},
+    abstract = {info/abstract-zh.tex},
+    % abstract* = {info/abstract-en.tex},
+    keywords = {我,就是,充数的,关键词},
+    keywords* = {Dummy,Keywords,Here,it is},
+    % acknowledgements = {info/acknowledgements.tex}
+    }
+}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\newmint{cpp}{showspaces}
+\newmintinline{cpp}{showspaces}
+\newmint{python}{showspaces}
+\newmintinline{python}{showspaces}
+\newmintinline{string}{}
+
+\usemintedstyle{vs}
+
+\begin{document}
+\frontmatter
+\mainmatter
+
+\input{chapter/chapter1.tex}
+
+\backmatter
+
+\begin{appendixes}
+    \chapter{这是一个附录}
+    \mint{python}|from numpy import *|
+    \chapter{这是另一个附录}
+\end{appendixes}
+
+
+\end{document}
